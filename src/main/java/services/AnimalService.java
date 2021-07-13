@@ -33,23 +33,14 @@ public class AnimalService {
         return animalRepository.findAllById(List.of(id));
     }
 
-    public void deleteById(Integer id) {
-        animalRepository.deleteById(id);
-    }
+    public void deleteById(Integer id) { animalRepository.deleteById(id); }
 
-    public List<String> getColores() {
-        return animalRepository.findDistinctByColor();
-    }
+    public List<String> getColores() { return animalRepository.findDistinctByColor(); }
 
-    public List<Animal> findByNombreContaining(String nombre) {
-        return animalRepository.findByNombreContaining(nombre);
-    }
+    public List<Animal> findByNombreContaining(String nombre) { return animalRepository.findByNombreContaining(nombre); }
 
-    public List<Animal> findByColor(String color) {
-        return animalRepository.findByColor(color);
-    }
+    public List<Animal> findByColor(String color) { return animalRepository.findByColor(color); }
 
-    public List<Animal> findAnimalesByEdadBetween(Integer edadDesde, Integer edadHasta) {
-        return animalRepository.findAnimalesByEdadBetween(edadDesde, edadHasta);
-    }
+    public List<Animal> findAnimalesByEdadBetween(Integer edadDesde, Integer edadHasta) { return animalRepository.findAnimalesByEdadBetween(edadDesde, edadHasta); }
+
 }
